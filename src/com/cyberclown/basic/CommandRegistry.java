@@ -5,8 +5,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.cyberclown.command.GachaCommand;
 import com.cyberclown.command.MemeCommand;
-import com.cyberclown.command.PingCommand;
 
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.entities.Guild;
@@ -20,8 +20,8 @@ public class CommandRegistry{
 
 	static{
 
-		register( new PingCommand() );
 		register( new MemeCommand() );
+		register( new GachaCommand() );
 
 	}
 

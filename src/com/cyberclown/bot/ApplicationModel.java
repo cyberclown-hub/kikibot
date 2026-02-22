@@ -9,7 +9,7 @@ import net.dv8tion.jda.api.JDABuilder;
 public class ApplicationModel{
 
 	private boolean botActive;
-	private final String token = "MTQ3NDg4MzYyNTkxMTcxNzk3OA.GHj0B7.xI0yG6bYM9Cf6oAkoVoFHGKU0yHViqF6Ry1cb4";
+	private final String token = System.getenv( "DISCORD_TOKEN" );
 	private final String GUILD_ID = "1391081808078307438";
 	private JDA jda;
 
