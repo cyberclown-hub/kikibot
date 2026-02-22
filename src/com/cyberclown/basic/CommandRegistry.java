@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Map;
 
 import com.cyberclown.command.GachaCommand;
+import com.cyberclown.command.GachaCommand10;
 import com.cyberclown.command.MemeCommand;
 
 import net.dv8tion.jda.api.JDA;
@@ -22,6 +23,7 @@ public class CommandRegistry{
 
 		register( new MemeCommand() );
 		register( new GachaCommand() );
+		register( new GachaCommand10() );
 
 	}
 

@@ -13,6 +13,22 @@ public class Gacha{
 
 	static{
 
+		addItem( new GachaItem( "Кики горничная",
+				"https://cyberclown-hub.github.io/kikibot/assets/gacha_item_001.png",
+				Rarity.LEGENDARY ) );
+		addItem( new GachaItem( "Кики Рыцарь",
+				"https://cyberclown-hub.github.io/kikibot/assets/gacha_item_002.png",
+				Rarity.LEGENDARY ) );
+		addItem( new GachaItem( "Искатель примогемов",
+				"https://cyberclown-hub.github.io/kikibot/assets/gacha_item_003.png",
+				Rarity.RARE ) );
+		addItem( new GachaItem( "Эссенция духа",
+				"https://cyberclown-hub.github.io/kikibot/assets/gacha_item_004.png",
+				Rarity.COMMON ) );
+		addItem( new GachaItem( "Кики колдун",
+				"https://cyberclown-hub.github.io/kikibot/assets/gacha_item_005.png",
+				Rarity.RARE ) );
+
 	}
 
 	public static void addItem( GachaItem item ){
