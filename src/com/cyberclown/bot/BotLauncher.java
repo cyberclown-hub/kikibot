@@ -19,7 +19,7 @@ public class BotLauncher{
 		SwingUtilities.invokeLater( () -> {
 
 			JFrame frame = new JFrame();
-			frame.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
+			frame.setLocationRelativeTo(null);
 			new ApplicationRootController( frame );
 			frame.pack();
 			frame.setVisible( true );

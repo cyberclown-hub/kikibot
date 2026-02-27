@@ -1,9 +1,10 @@
 package com.cyberclown.bot;
 
-import java.awt.event.WindowAdapter;
-import java.awt.event.WindowEvent;
-
 import javax.swing.JFrame;
+
+import com.cyberclown.gui.IconService;
+import com.cyberclown.gui.MainPanel;
+import com.cyberclown.gui.TrayService;
 
 public class ApplicationRootController{
 
@@ -13,16 +14,8 @@ public class ApplicationRootController{
 
 		model = new ApplicationModel();
 		frame.setContentPane( new MainPanel( model, this ) );
-		frame.addWindowListener( new WindowAdapter(){
-
-			@Override
-			public void windowClosing( WindowEvent e ){
-
-				stopBot();
-
-			}
-
-		} );
+		new IconService().apply( frame );
+		new TrayService().apply( frame, this, model );
 
 		Runtime.getRuntime().addShutdownHook( new Thread( this::stopBot ) );
 
